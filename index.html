@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>oi,rs</title>
+
+    <style>
+        body {
+            background-color: rgb(170, 209, 226);
+        }
+        
+        .painel {
+            margin: auto;
+            background-color: rgb(247, 247, 247);
+            color: rgb(93, 5, 124);
+            width: 400px;
+            height: 520px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            min-width: 400px;
+            max-width: 600px;
+        }
+        
+        #sim {
+            height: 40px;
+            width: 60px;
+            background-color: purple;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        
+        #nao {
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: purple;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="painel">
+        <h2>Oi, moço bonito!</h2>
+        <h2>Aceita continuar namorando comigo??</h2>
+        <img src="hh.gif" alt="hello kitta" width="200" height="200">
+        <center/>
+        <br>
+        <button id="sim" onclick="parabens()">Sim!</button>
+        <button onmouseover="fuja()" id="nao">Não!</button>
+
+
+    </div>
+
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+
+        function vixi() {
+            alert("vai namorar comigo sim, não tem essa de fugir. (eu te amo, infinitamente, meu amor♾️❤️).")
+        }
+    </script>
+</body>
+
+</html>
