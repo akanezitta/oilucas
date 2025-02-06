@@ -1,3 +1,12 @@
+Aqui está a versão com tons de azul! 💙✨  
+
+- O fundo agora é um azul mais suave.  
+- A cor do texto foi ajustada para um tom azul escuro.  
+- Os botões agora são azul-escuro com borda branca.  
+
+Dá uma olhada no código atualizado: 👇  
+
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,17 +14,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-    <title>oi,rs</title>
+    <title>Oi, rs</title>
 
     <style>
         body {
-            background-color: rgb(170, 209, 226);
+            background-color: rgb(135, 206, 235);
         }
-        
+
         .painel {
             margin: auto;
-            background-color: rgb(247, 247, 247);
-            color: rgb(93, 5, 124);
+            background-color: rgb(240, 248, 255);
+            color: rgb(0, 51, 102);
             width: 400px;
             height: 520px;
             border-radius: 20px;
@@ -24,27 +33,30 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             min-width: 400px;
             max-width: 600px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
+
         #sim {
             height: 40px;
             width: 60px;
-            background-color: purple;
+            background-color: rgb(0, 102, 204);
             border: 2px solid white;
             border-radius: 10px;
             color: white;
             margin-left: -50px;
+            cursor: pointer;
         }
-        
+
         #nao {
             position: absolute;
             height: 40px;
             width: 60px;
-            background-color: purple;
+            background-color: rgb(0, 102, 204);
             border: 2px solid white;
             border-radius: 10px;
             color: white;
             margin-left: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -54,18 +66,15 @@
     <div class="painel">
         <h2>Oi, Sr Lucas!</h2>
         <h2>Aceita namorar comigo??</h2>
-        <img src="hh.gif" alt="hello kitta" width="200" height="200">
-        <center/>
+        <img src="hh.gif" alt="hello kitty" width="200" height="200">
         <br>
         <button id="sim" onclick="parabens()">Sim!</button>
         <button onmouseover="fuja()" id="nao">Não!</button>
-
-
     </div>
 
     <script>
         function fuja() {
-            var botaoNao = document.getElementById("nao")
+            var botaoNao = document.getElementById("nao");
 
             var larguraJanela = window.innerWidth;
             var alturaJanela = window.innerHeight;
@@ -81,9 +90,10 @@
         }
 
         function parabens() {
-            alert(". EU TE AMO")
+            alert("EU TE AMO, VOCÊ É INCRÍVEL 💙");
         }
     </script>
-</body>
 
+</body>
 </html>
+
